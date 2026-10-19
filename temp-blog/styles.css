@@ -43,3 +43,16 @@ h1, h2, h3 { border-bottom: 0 !important; }
 #quarto-content { padding: 0; }
 #quarto-content > main { margin: 0; max-width: none; padding: 0; }
 
+.navbar {
+  background: var(--bg) !important;
+  border: 0;
+  min-height: 4.75rem;
+  padding: 0 var(--margin);
+}
+.navbar-brand { font-family: "Besley", Georgia, serif; font-weight: 800; letter-spacing: -0.02em; }
+.navbar-nav { gap: clamp(0.25rem, 1vw, 1.15rem); }
+.navbar .nav-link { color: var(--ink) !important; font-size: var(--step-small); font-weight: 500; padding-block: 0.85rem; }
+.navbar .nav-link.active, .navbar .nav-link:hover { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 0.16em; }
+.navbar-toggler { border: 0; color: var(--ink); }
+.quarto-color-scheme-toggle { color: var(--ink) !important; }
+
