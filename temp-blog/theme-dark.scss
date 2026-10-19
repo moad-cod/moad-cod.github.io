@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Besley", Georgia, serif;
+$body-bg: #081521;
+$body-color: #f2f1ec;
+$primary: #f2f1ec;
+$secondary: #b8bec9;
+$link-color: #f2f1ec;
+$navbar-bg: #081521;
+$navbar-fg: #f2f1ec;
+$navbar-hl: #f7a844;
+$footer-bg: #111f2b;
+$footer-fg: #f2f1ec;
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+
+/*-- scss:rules --*/
+:root {
+  color-scheme: dark;
+  --bg: #081521;
+  --surface: #111f2b;
+  --ink: #f2f1ec;
+  --muted: #b8bec9;
+  --accent: #f7a844;
+  --accent-strong: #ffc06f;
+  --accent-ink: #081521;
+  --field-dark: #030a10;
+  --field-dark-ink: #ffffff;
+  --field-soft: #172735;
+  --field-soft-ink: #f2f1ec;
+}
+
