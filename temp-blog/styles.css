@@ -132,3 +132,24 @@ h1, h2, h3 { border-bottom: 0 !important; }
 .page-intro h1 { font-size: var(--step-display); grid-column: 1 / span 8; max-width: 10ch; margin-left: -0.04em; }
 .page-intro p { align-self: end; font-size: var(--step-lead); grid-column: 9 / -1; line-height: 1.38; margin-bottom: 0.5rem; }
 
+.research-filter { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0 0 5rem 33.33%; }
+.filter-button { background: var(--surface); border: 0; color: var(--ink); cursor: pointer; font: 600 var(--step-small)/1 "Libre Franklin", sans-serif; min-height: 2.9rem; padding: 0.8rem 1rem; transition: background-color var(--t-hover) ease, color var(--t-hover) ease, transform var(--t-press) var(--ease-out); }
+.filter-button.is-active { background: var(--accent); color: var(--accent-ink); }
+.filter-button:active { transform: scale(0.97); }
+.project-ledger { display: grid; gap: 0.75rem; }
+.research-project { background: var(--surface); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); padding: clamp(2rem, 5vw, 5rem) var(--margin); min-height: 70svh; transition: opacity var(--t-ui) ease, transform var(--t-ui) var(--ease-out); }
+.research-project[hidden] { display: none; }
+.project-dark { background: var(--field-dark); color: var(--field-dark-ink); }
+.project-meta { grid-column: 1 / span 3; display: flex; flex-direction: column; gap: 0.45rem; font-size: var(--step-small); }
+.project-meta span:last-child { color: var(--muted); }
+.project-dark .project-meta span:last-child { color: #c9cdd3; }
+.project-copy { grid-column: 5 / span 7; align-self: center; }
+.project-copy h2 { font-size: var(--step-head); margin-bottom: 2rem; }
+.project-copy p, .project-copy li { max-width: 58ch; }
+.project-copy ul { padding-left: 1.2rem; margin: 2rem 0; }
+.project-copy li + li { margin-top: 0.6rem; }
+.experiment-matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem; margin: 2rem 0; }
+.experiment-matrix span { background: #172735; color: #f2f1ec; min-height: 4rem; display: flex; align-items: center; padding: 1rem; }
+.method-project { background: var(--accent); color: var(--accent-ink); }
+.method-project .project-meta span:last-child { color: #38415c; }
+
