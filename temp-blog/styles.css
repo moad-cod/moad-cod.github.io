@@ -108,3 +108,22 @@ h1, h2, h3 { border-bottom: 0 !important; }
 .visual-crossfade img:nth-child(4) { object-position: 58% center; }
 .visual-caption { align-items: center; background: var(--bg); bottom: 0; color: var(--ink); display: flex; font-size: var(--step-small); justify-content: space-between; left: 0; min-height: 3.5rem; padding: 0.8rem 1rem; position: absolute; right: 0; z-index: 2; }
 
+.home-ledger, .home-notes, .home-contact { padding: clamp(7rem, 14vw, 12rem) clamp(1.5rem, 5vw, 5rem); }
+.home-ledger h2, .home-notes h2, .home-contact h2 { font-size: var(--step-head); margin-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+.ledger-row { display: grid; grid-template-columns: 1.25fr 1fr auto; gap: 1rem; min-height: 4.2rem; align-items: center; text-decoration: none; transition: background-color var(--t-hover) ease, padding var(--t-hover) ease; }
+.ledger-row span:nth-child(2), .ledger-row span:nth-child(3) { color: var(--muted); font-size: var(--step-small); }
+.home-ledger:has(.ledger-row:hover) .ledger-row:not(:hover) { opacity: 0.5; }
+.home-statement { background: var(--field-dark); color: var(--field-dark-ink); display: flex; min-height: 78svh; align-items: center; padding: clamp(6rem, 10vw, 9rem) clamp(1.5rem, 5vw, 5rem); }
+.home-statement p { font-family: "Besley", Georgia, serif; font-size: clamp(1.55rem, 2.2vw, 2.2rem); font-weight: 700; line-height: 1.15; max-width: 20ch; }
+.research-mosaic { display: grid; grid-template-columns: 1.35fr 1fr; grid-template-rows: 1fr 1fr; gap: 0.75rem; min-height: 84svh; padding: 0.75rem; background: var(--field-soft); }
+.research-mosaic img { height: 100%; object-fit: cover; width: 100%; }
+.research-mosaic img:first-child { grid-row: 1 / span 2; }
+.research-mosaic img:last-child { object-position: center 42%; }
+.home-notes { background: var(--surface); }
+.home-notes > div:first-child p { color: var(--muted); }
+.note-links { margin-top: 4rem; }
+.note-links a { display: flex; flex-direction: column; gap: 0.4rem; font-family: "Besley", Georgia, serif; font-size: clamp(1.35rem, 2vw, 2rem); line-height: 1.15; margin-bottom: 2.5rem; text-decoration: none; }
+.note-links span { color: var(--muted); font-family: "Libre Franklin", sans-serif; font-size: var(--step-small); }
+.home-contact { min-height: 78svh; display: flex; flex-direction: column; justify-content: center; }
+.home-contact h2 { margin-bottom: 1.5rem; }
+
