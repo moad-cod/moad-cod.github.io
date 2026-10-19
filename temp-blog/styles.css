@@ -92,3 +92,19 @@ h1, h2, h3 { border-bottom: 0 !important; }
 .text-link { font-size: var(--step-small); font-weight: 600; text-decoration-color: transparent; transition: text-decoration-color var(--t-hover) ease; }
 .hero-footnote { color: var(--muted); font-size: var(--step-small); margin: auto 0 0; }
 
+.research-visual {
+  flex: 0 0 calc(48% - 0.75rem);
+  height: calc(100svh - 1.5rem);
+  position: sticky;
+  top: 0.75rem;
+  overflow: hidden;
+  background: var(--field-dark);
+  margin: 0.75rem 0.75rem 0.75rem 0;
+}
+.visual-crossfade { height: 100%; position: relative; }
+.visual-crossfade::after { content: ""; position: absolute; inset: 0; background: rgba(3, 10, 16, 0.16); pointer-events: none; }
+.visual-crossfade img { height: 100%; inset: 0; object-fit: cover; opacity: 0; position: absolute; width: 100%; transition: opacity 1.6s var(--ease-soft), transform 6s linear; }
+.visual-crossfade img.is-active { opacity: 1; transform: scale(1.025); }
+.visual-crossfade img:nth-child(4) { object-position: 58% center; }
+.visual-caption { align-items: center; background: var(--bg); bottom: 0; color: var(--ink); display: flex; font-size: var(--step-small); justify-content: space-between; left: 0; min-height: 3.5rem; padding: 0.8rem 1rem; position: absolute; right: 0; z-index: 2; }
+
