@@ -1,23 +1,73 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-  description: "A blog built with Quarto"
-  site-url: https://your-website-url.example.com # you must change this appropriately for RSS feeds to work properly
-  title: "Mouad | Research"
+  title: "Mouad El Baz"
+  description: "Research portfolio of Mouad El Baz: applied machine learning, retrieval systems, NLP, and reproducible experimentation."
+  site-url: https://moad-cod.github.io
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
   navbar:
+    title: "Mouad El Baz"
+    left:
+      - text: Research
+        href: research.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: About / CV
+        href: about.qmd
     right:
-      - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: bluesky
-        href: https://bsky.app/
+        aria-label: GitHub
+        href: https://github.com/moad-cod
+  page-footer:
+    left: "© 2026 Mouad El Baz"
+    center:
+      - text: Research
+        href: research.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Publications
+        href: publications.qmd
+    right:
+      - text: Email
+        href: mailto:elbaz.ouad1249@gmail.com
+  search: true
+  reader-mode: true
+
+bibliography: references.bib
+
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light:
+        - cosmo
+        - theme-light.scss
+      dark:
+        - darkly
+        - theme-dark.scss
     css: styles.css
+    toc: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    anchor-sections: false
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Besley:wght@700;800&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+        <script>document.documentElement.classList.add('js')</script>
+    include-after-body:
+      - text: |
+          <script src="interactions.js"></script>
+
+execute:
+  freeze: auto
 
 
 
