@@ -168,3 +168,14 @@ h1, h2, h3 { border-bottom: 0 !important; }
 .skills-band p { font-size: var(--step-lead); line-height: 1.5; margin-top: 3rem; }
 .contact-band { min-height: 65svh; display: flex; flex-direction: column; justify-content: center; padding: clamp(6rem, 12vw, 10rem) 16.67%; }
 
+.publication-status { background: var(--accent); color: var(--accent-ink); display: grid; grid-template-columns: 1fr 2fr; gap: var(--gutter); padding: clamp(2rem, 4vw, 4rem); }
+.publication-status div { display: flex; flex-direction: column; gap: 0.5rem; }
+.publication-status span { font-size: var(--step-small); }
+.publication-status strong { font-family: "Besley", Georgia, serif; font-size: var(--step-lead); }
+.output-index { padding: clamp(8rem, 14vw, 13rem) 8.33%; }
+.output-index h2, .citation-guide h2 { font-size: var(--step-head); margin-bottom: 4rem; }
+.output-index article { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: end; margin-bottom: 3.5rem; }
+.output-index h3 { font-size: var(--step-lead); }
+.output-index p { color: var(--muted); margin: 0; }
+.citation-guide { background: var(--surface); padding: clamp(6rem, 10vw, 9rem) 33.33%; padding-right: var(--margin); }
+
