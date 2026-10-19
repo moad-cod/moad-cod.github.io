@@ -1,0 +1,37 @@
+---
+title: "Research"
+description: "Research by Mouad El Baz across machine learning, retrieval systems, language models, and reproducible AI engineering."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="page-shell research-page">
+  <header class="page-intro research-intro" data-reveal><h1>Questions before tools</h1><p>The common thread is not a single data type. It is a way of working: define the question, isolate the comparison, preserve the evidence, and report the limits.</p></header>
+  <nav class="research-filter" aria-label="Filter research projects" data-reveal>
+    <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All research</button>
+    <button class="filter-button" type="button" data-filter="retrieval" aria-pressed="false">Retrieval</button>
+    <button class="filter-button" type="button" data-filter="evaluation" aria-pressed="false">Evaluation</button>
+    <button class="filter-button" type="button" data-filter="engineering" aria-pressed="false">Engineering</button>
+  </nav>
+  <section class="project-ledger" aria-live="polite">
+    <article class="research-project" id="ccsr" data-topics="retrieval engineering" data-reveal>
+      <div class="project-meta"><span>Active</span><span>Research infrastructure</span></div>
+      <div class="project-copy"><h2>CCSR / RAGForge</h2><p>A local-first research engineering system for computer science and AI experimentation. Its developed RAG workflow keeps documents, retrieval evidence, traces, and query history inspectable.</p><ul><li>Versioned Bronze, Silver, and Gold data layers</li><li>Dense and sparse retrieval in Qdrant</li><li>Streaming answers with ranked evidence</li><li>Retrieval tracing and orchestration benchmarks</li></ul><a class="text-link" href="https://github.com/moad-cod/RAGForge">Open the repository</a></div>
+    </article>
+    <article class="research-project project-dark" id="medquad" data-topics="retrieval evaluation" data-reveal>
+      <div class="project-meta"><span>Ongoing</span><span>Language models</span></div>
+      <div class="project-copy"><h2>Qwen × MedQuAD</h2><p>A comparative study of when a language model should rely on adaptation, retrieve supporting evidence, or abstain from answering medical questions.</p><div class="experiment-matrix" data-ui><span>Base Qwen</span><span>Base + RAG</span><span>QLoRA</span><span>QLoRA + RAG</span></div><p>Data cleaning and group-based splits are complete. Formatting, token analysis, comparative evaluation, uncertainty analysis, and retrieval stress tests follow.</p><a class="text-link" href="https://github.com/moad-cod/qwen-medquad-finetuning">Open the study</a></div>
+    </article>
+    <article class="research-project" id="ticket-intelligence" data-topics="retrieval evaluation engineering" data-reveal>
+      <div class="project-meta"><span>Built</span><span>Applied AI system</span></div>
+      <div class="project-copy"><h2>Ticket intelligence</h2><p>An end-to-end operational intelligence platform combining hybrid retrieval, reranking, grounded generation, and triage models over a large technical-ticket corpus.</p><ul><li>FAISS and BM25 retrieval with reciprocal-rank fusion</li><li>Cross-encoder reranking and latency benchmarks</li><li>Grounded RAG responses with source inspection</li><li>FastAPI services, role-based access, and an analysis interface</li></ul><a class="text-link" href="https://github.com/moad-cod/operational-intelligence-platform">Read the project map</a></div>
+    </article>
+    <article class="research-project method-project" id="method" data-topics="evaluation engineering" data-reveal>
+      <div class="project-meta"><span>Method</span><span>Across projects</span></div>
+      <div class="project-copy"><h2>Inspectable experiments</h2><p>Every project aims to preserve the chain from question to result. That means explicit hypotheses, leakage-aware splits, benchmark definitions, versioned artifacts, traceable model outputs, and limitations written beside the metrics.</p><a class="text-link" href="blog.html">Read the research notes</a></div>
+    </article>
+  </section>
+</div>
+```
+
