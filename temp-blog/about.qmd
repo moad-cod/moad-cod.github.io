@@ -1,19 +1,36 @@
 ---
-title: "About"
+title: "About / CV"
+description: "About Mouad El Baz, a data scientist focused on applied machine learning, retrieval systems, and reproducible experimentation."
 image: profile.jpg
-about:
-  template: jolla
-  links:
-    - icon: bluesky
-      text: Bluesky
-      href: https://bsky.app/
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
-
+page-layout: full
+toc: false
 ---
 
-About this blog
+```{=html}
+<div class="page-shell about-page">
+  <header class="page-intro about-intro" data-reveal>
+    <h1>Curious by method</h1>
+    <p>I’m Mouad El Baz, a data scientist focused on building and evaluating AI systems. I work where machine learning, data pipelines, and software engineering meet.</p>
+  </header>
+  <section class="about-portrait" data-reveal>
+    <img src="profile.jpg" width="640" height="960" alt="Long-exposure light drawing in a landscape at dusk">
+    <div class="founder-letter">
+      <p>I’m especially interested in natural language processing, retrieval-augmented generation, and the harder question behind model performance: what evidence supports an answer?</p>
+      <p>My projects use clear hypotheses, controlled experiments, and inspectable results. I care about why a model improves, where it fails, and whether someone else can reproduce the result.</p>
+      <p>This site is the working record: research projects, technical notes, publication-ready outputs, and the decisions behind them.</p>
+      <p><strong>Mouad El Baz</strong><br><span>Data Scientist · AI / ML Engineering</span></p>
+    </div>
+  </section>
+  <section class="cv-section" aria-labelledby="focus-title" data-reveal>
+    <h2 id="focus-title">Research focus</h2>
+    <div class="cv-rows">
+      <div><h3>Applied machine learning</h3><p>Data preparation, experimental design, feature development, and model evaluation.</p></div>
+      <div><h3>NLP and language models</h3><p>Retrieval-augmented generation, adaptation, grounding, uncertainty, and abstention.</p></div>
+      <div><h3>AI engineering</h3><p>APIs, durable ingestion pipelines, retrieval infrastructure, and workflow orchestration.</p></div>
+      <div><h3>Reproducibility</h3><p>Versioned data, explicit configurations, retrieval traces, and documented experiment artifacts.</p></div>
+    </div>
+  </section>
+  <section class="skills-band" aria-labelledby="skills-title" data-reveal><h2 id="skills-title">Working toolkit</h2><p>Python · PyTorch · FastAPI · PostgreSQL · Qdrant · MinIO · Redis · Apache Airflow · Celery · Docker · Linux · Git</p></section>
+  <section class="contact-band" data-reveal><h2>Work together</h2><p>For research collaborations, applied AI work, or Data Science opportunities, write to me directly.</p><div class="contact-actions"><a class="button-primary" href="mailto:elbaz.ouad1249@gmail.com">Email Mouad</a><a class="text-link" href="https://github.com/moad-cod">View GitHub</a></div></section>
+</div>
+```
