@@ -1,9 +1,53 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "Retrieval with evidence"
 date: "2026-10-19"
-categories: [news, code, analysis]
+categories: [retrieval, evaluation, code]
+description: "A compact framework for retrieval comparisons that preserves rankings, latency, and evidence."
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+![](image.jpg){fig-alt="Earth at night photographed from orbit"}
+
+Retrieval-augmented generation joins a language model to an external evidence source [@lewis2020rag]. The useful comparison is not only whether the final answer sounds better. It is whether the retrieval stage found relevant evidence, whether reranking changed the order for a defensible reason, and whether the answer stayed grounded in what was retrieved.
+
+## Start with a measurable retrieval question
+
+For a query $q$ and a ranked result list, reciprocal rank focuses on the position of the first relevant result:
+
+$$
+\operatorname{RR}(q) = \frac{1}{\operatorname{rank}_q}
+$$
+
+Mean reciprocal rank then averages that value across $|Q|$ queries:
+
+$$
+\operatorname{MRR} = \frac{1}{|Q|}\sum_{q \in Q}\operatorname{RR}(q)
+$$
+
+The metric is simple, but the experiment around it should retain more detail than one aggregate number. Save the query, candidate identifiers, raw scores, fused ranks, reranked scores, timings, and the relevance judgment used for evaluation.
+
+## Keep the experiment inspectable
+
+```python
+from dataclasses import dataclass
+
+@dataclass(frozen=True)
+class RetrievalTrace:
+    query: str
+    document_id: str
+    dense_rank: int | None
+    sparse_rank: int | None
+    fused_rank: int
+    reranked_score: float | None
+    latency_ms: float
+```
+
+A trace like this does not decide which system is best. It makes the decision reviewable. If hybrid retrieval improves recall but reranking removes a relevant document, the saved stages reveal where the change happened.
+
+## Compare systems, not isolated scores
+
+The Qwen × MedQuAD study extends the same principle to model adaptation. A clean comparison between base, retrieval-augmented, QLoRA-adapted, and adapted-plus-retrieval configurations must keep the data split and evaluation protocol fixed. QLoRA makes parameter-efficient adaptation practical [@dettmers2023qlora], but efficiency does not remove the need for leakage checks, uncertainty analysis, or retrieval stress tests.
+
+A good experiment produces a result together with the evidence needed to understand how it was produced.
+
+## References
