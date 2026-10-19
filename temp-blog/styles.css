@@ -127,3 +127,8 @@ h1, h2, h3 { border-bottom: 0 !important; }
 .home-contact { min-height: 78svh; display: flex; flex-direction: column; justify-content: center; }
 .home-contact h2 { margin-bottom: 1.5rem; }
 
+.page-shell { padding: 0 var(--margin) clamp(7rem, 12vw, 11rem); }
+.page-intro { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gutter); min-height: 68svh; align-content: center; }
+.page-intro h1 { font-size: var(--step-display); grid-column: 1 / span 8; max-width: 10ch; margin-left: -0.04em; }
+.page-intro p { align-self: end; font-size: var(--step-lead); grid-column: 9 / -1; line-height: 1.38; margin-bottom: 0.5rem; }
+
