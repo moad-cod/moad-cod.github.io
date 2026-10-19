@@ -225,3 +225,58 @@ body:has(.blog-intro) #quarto-margin-sidebar { display: none; }
 @keyframes line-up { to { transform: none; } }
 @keyframes rise { to { opacity: 1; transform: none; } }
 
+@media (max-width: 900px) {
+  .navbar { min-height: 4rem; }
+  .split-home.page-columns { display: flex !important; flex-direction: column; }
+  .research-visual { height: 28svh; margin: 0 0.75rem; order: 0; position: relative; top: auto; width: calc(100% - 1.5rem); }
+  .visual-caption { display: none; }
+  .home-reading { background: var(--bg); flex-basis: auto; order: 1; position: relative; z-index: 2; }
+  .portfolio-hero { min-height: auto; padding-top: 3.5rem; }
+  .hero-title { font-size: clamp(3.2rem, 13vw, 5.5rem); }
+  .page-intro { grid-template-columns: 1fr; min-height: 62svh; }
+  .page-intro h1, .page-intro p { grid-column: 1; }
+  .page-intro h1 { font-size: clamp(3.2rem, 12vw, 5.5rem); }
+  .research-filter { margin-left: 0; }
+  .research-project { grid-template-columns: 1fr; min-height: auto; padding-block: 4rem; }
+  .project-meta, .project-copy { grid-column: 1; }
+  .project-meta { margin-bottom: 3rem; }
+  .about-portrait { grid-template-columns: 1fr; }
+  .about-portrait img { max-height: 70svh; }
+  .cv-section { grid-template-columns: 1fr; }
+  .cv-section h2 { margin-bottom: 3rem; }
+  .publication-status { grid-template-columns: 1fr; }
+  .citation-guide { padding-left: var(--margin); }
+  .quarto-listing-default .list { grid-column: 1 / -1; }
+  .blog-intro .blog-intro-copy { grid-column: 1; }
+}
+
+@media (max-width: 560px) {
+  .navbar-brand { font-size: 1rem; }
+  .portfolio-hero, .home-ledger, .home-notes, .home-contact { padding-inline: 1.15rem; }
+  .hero-actions, .contact-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions .button-primary, .contact-actions .button-primary { width: 100%; }
+  .hero-actions .text-link, .contact-actions .text-link { min-height: 2.75rem; display: inline-flex; align-items: center; }
+  .ledger-row { grid-template-columns: 1fr auto; padding-block: 0.7rem; }
+  .ledger-row span:nth-child(2) { grid-column: 1; grid-row: 2; }
+  .ledger-row span:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; }
+  .visual-caption span:first-child { max-width: 19ch; }
+  .portfolio-hero { min-height: auto; padding-block: 3.5rem 4.5rem; }
+  .hero-footnote { margin-top: 3rem; }
+  .home-statement p { font-size: 1.45rem; }
+  .research-mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 58vw 42vw; min-height: 0; }
+  .research-mosaic img:first-child { grid-column: 1 / -1; grid-row: 1; }
+  .cv-rows > div { grid-template-columns: 1fr; gap: 0.5rem; }
+  .experiment-matrix { grid-template-columns: 1fr; }
+  .output-index { padding-inline: 0; }
+  .output-index article { grid-template-columns: 1fr; gap: 0.75rem; }
+  .blog-image-band { grid-template-columns: 1fr 1fr; min-height: 32svh; }
+  .blog-image-band img { height: 32svh; }
+  .quarto-listing-default .quarto-post { grid-template-areas: "thumb" "body" "meta"; grid-template-columns: 1fr; }
+  .nav-footer { align-items: flex-start; flex-direction: column; gap: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .visual-crossfade img:not(:first-child) { display: none; }
+}
