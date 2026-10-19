@@ -1,0 +1,20 @@
+---
+title: "Blog"
+description: "Research notes on machine learning, retrieval, language models, evaluation, and reproducible systems."
+page-layout: full
+toc: false
+listing:
+  contents: posts
+  feed: true
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+```{=html}
+<header class="page-shell page-intro blog-intro" data-reveal><h1>Research notes</h1><div class="blog-intro-copy"><p>Experiments, implementation details, reading, and results that need a second look.</p><a class="button-primary" href="posts/post-with-code/">Read the latest</a></div></header>
+<div class="blog-image-band" data-reveal><img src="profile.jpg" width="640" height="960" alt="Long-exposure light drawing at dusk"><img src="posts/post-with-code/image.jpg" width="640" height="426" alt="Earth at night photographed from orbit"></div>
+```
+
