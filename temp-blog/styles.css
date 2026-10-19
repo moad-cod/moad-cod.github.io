@@ -1,1 +1,45 @@
-/* css styles */
+/* Editorial research portfolio */
+:root {
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --step-display: clamp(3.35rem, 1.8rem + 6vw, 7.25rem);
+  --margin: clamp(1.1rem, 2.2vw, 2rem);
+  --gutter: clamp(1rem, 1.8vw, 1.75rem);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+  --t-press: 140ms;
+  --t-hover: 180ms;
+  --t-ui: 240ms;
+  --t-reveal: 800ms;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--step-body);
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+a { color: currentColor; text-underline-offset: 0.2em; text-decoration-thickness: 0.07em; }
+p { max-width: 64ch; text-wrap: pretty; }
+h1, h2, h3 {
+  color: inherit;
+  font-family: "Besley", Georgia, serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { border-bottom: 0 !important; }
+.page-layout-full #title-block-header { display: none; }
+#quarto-content { padding: 0; }
+#quarto-content > main { margin: 0; max-width: none; padding: 0; }
+
