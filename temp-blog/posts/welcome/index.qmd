@@ -1,12 +1,28 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+title: "Beyond one dataset"
 date: "2026-10-16"
-categories: [news]
+categories: [research practice, portfolio]
+description: "Why this site treats EEG, language models, retrieval, and data systems as parts of one research practice."
+image: "thumbnail.jpg"
 ---
 
-This is the first post in a Quarto blog. Welcome!
+![](thumbnail.jpg){fig-alt="Laptop, notebook, and coffee on a wooden research desk"}
 
-![](thumbnail.jpg)
+A research identity can become too closely attached to the first dataset people recognize. EEG is one useful signal, but it is not the boundary of my scientific work. The larger question is how to build reliable knowledge from complex data.
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+That question appears in several forms across this portfolio:
+
+- How should an experiment separate signal from leakage?
+- When does a language model need retrieved evidence rather than memorized parameters?
+- Which metrics reveal a model’s failure modes instead of smoothing them away?
+- What artifacts must be saved so another researcher can inspect the result?
+
+## One method, several domains
+
+The site is organized around research questions and methods rather than a single modality. Projects in retrieval, language-model evaluation, machine learning, and research infrastructure sit beside one another because they share the same standard: the chain from question to evidence should remain visible.
+
+This also changes what belongs in a scientific blog. Alongside results, I want to document choices: how a split was constructed, why one baseline was retained, where an evaluation is weak, and what I would test next.
+
+## What comes next
+
+Future notes will include equations, executable code, citations, benchmark definitions, and the less polished parts of research that usually disappear from a final summary. That record is useful even when the result is negative.
