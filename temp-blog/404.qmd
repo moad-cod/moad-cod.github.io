@@ -1,0 +1,10 @@
+---
+title: "Page not found"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="not-found"><p>That path does not contain a result.</p><h1>Let’s return to the evidence</h1><a class="button-primary" href="index.html">Back to the portfolio</a></div>
+```
+
