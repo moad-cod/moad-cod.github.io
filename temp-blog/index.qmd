@@ -1,15 +1,63 @@
 ---
-title: "Mouad | Research"
-listing:
-  contents: posts
-  feed: true
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+title: "Home"
 page-layout: full
-title-block-banner: true
+toc: false
+title-block-style: none
+description: "Mouad El Baz builds and studies machine-learning systems with an emphasis on evidence, evaluation, and reproducibility."
 ---
 
+```{=html}
+<div class="split-home">
+  <div class="home-reading">
+    <section class="portfolio-hero" aria-labelledby="home-title">
+      <h1 id="home-title" class="hero-title lines"><span class="line"><span data-line>Traceable</span></span><span class="line"><span data-line>research</span></span></h1>
+      <p class="hero-copy" data-rise>Mouad El Baz studies applied machine learning, retrieval systems, language models, and reproducible AI infrastructure.</p>
+      <div class="hero-actions" data-rise>
+        <a class="button-primary" href="research.html">Explore the research</a>
+        <a class="text-link" href="about.html">About / CV</a>
+      </div>
+      <p class="hero-footnote">Based in Morocco · Open to research and applied AI collaboration</p>
+    </section>
 
+    <section class="home-ledger" aria-labelledby="selected-research" data-reveal>
+      <h2 id="selected-research">Selected research</h2>
+      <a class="ledger-row" href="research.html#ccsr" data-reveal><span>CCSR / RAGForge</span><span>Retrieval systems</span><span>Active</span></a>
+      <a class="ledger-row" href="research.html#medquad" data-reveal><span>Qwen × MedQuAD</span><span>Model evaluation</span><span>Ongoing</span></a>
+      <a class="ledger-row" href="research.html#ticket-intelligence" data-reveal><span>Ticket intelligence</span><span>Applied ML</span><span>Built</span></a>
+      <a class="ledger-row" href="research.html#method" data-reveal><span>Research method</span><span>Reproducibility</span><span>Continuous</span></a>
+    </section>
+
+    <section class="home-statement" data-reveal><p>Test the question. Preserve the evidence.</p></section>
+
+    <section class="research-mosaic" aria-label="Research materials" data-reveal>
+      <img src="posts/welcome/thumbnail.jpg" width="640" height="427" alt="Laptop, notebook, and coffee on a research desk" loading="lazy">
+      <img src="posts/post-with-code/image.jpg" width="640" height="426" alt="Earth at night photographed from orbit" loading="lazy">
+      <img src="profile.jpg" width="640" height="960" alt="Long-exposure light drawing at dusk" loading="lazy">
+    </section>
+
+    <section class="home-notes" aria-labelledby="recent-notes" data-reveal>
+      <div><h2 id="recent-notes">Recent notes</h2><p>Methods, experiments, and honest accounts of what did not work.</p></div>
+      <div class="note-links">
+        <a href="posts/post-with-code/">Retrieval with evidence <span>19 Oct 2026</span></a>
+        <a href="posts/welcome/">Beyond one dataset <span>16 Oct 2026</span></a>
+      </div>
+    </section>
+
+    <section class="home-contact" data-reveal>
+      <h2>Let’s compare notes</h2>
+      <p>I’m open to Data Science opportunities and collaborations in AI/ML engineering, NLP, applied AI, and model evaluation.</p>
+      <a class="button-primary" href="mailto:elbaz.ouad1249@gmail.com?subject=Research%20collaboration">Start a conversation</a>
+    </section>
+  </div>
+
+  <aside class="research-visual" aria-label="Research imagery">
+    <div class="visual-crossfade" data-crossfade>
+      <img class="is-active" src="profile.jpg" width="640" height="960" alt="Long-exposure light drawing in a dark landscape at dusk">
+      <img src="posts/post-with-code/image.jpg" width="640" height="426" alt="Earth at night photographed from orbit">
+      <img src="posts/welcome/thumbnail.jpg" width="640" height="427" alt="Laptop, notebook, and coffee arranged on a research desk">
+      <img src="profile.jpg" width="640" height="960" alt="Detail of a luminous trace against the night sky">
+    </div>
+    <div class="visual-caption"><span>Across signals, language, and systems</span><span data-slide-count>1 / 3</span></div>
+  </aside>
+</div>
+```
